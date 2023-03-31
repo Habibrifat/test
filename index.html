@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- featured-product -->
+    <section class="featured-product">
+      <h2 class="featured-heading">Weekly Flash Deal</h2>
+      <div class="featured-container">
+        <div class="featured-body">
+          <div class="counter">
+            <div>
+              <span class="days" id="day"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours" id="hour"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes" id="minute"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="second" id="second"></span>
+              <div class="smalltext">second</div>
+            </div>
+          </div>
+          <div class="featured-text">
+            <p>COCOBELLA</p>
+            <h2>Airy Clean Logo Embroidery Sweater Pants</h2>
+            <span class="del-price"><del>$10800</del> $8640</span>
+            <p>Shipping calculated at checkout.</p>
+            <button type="button" disabled>x</button>
+            <button class="color-button selected" type="button" selected>
+              M
+            </button>
+            <button class="color-button" type="button">L</button>
+            <button class="color-button" type="button">ML</button>
+            <p class="para">
+              These Cocobella Airy Clean Logo Embroidery Sweater Pants are the
+              perfect athleisurewear. They are made to be airy and clean, with a
+              sporty yet casual look. The pants feature embroidery on the left
+              leg, and are made to be comfortable and flattering. Whether you're
+              hitting the gym or just running errands, these pants will have you
+              looking and feeling your best.
+            </p>
+            <div class="accordion-container">
+              <hr />
+              <button class="accordion">COMPOSITION</button>
+              <div class="panel">
+                <p>52% Cotton 48% Polyester</p>
+              </div>
+              <hr />
+              <button class="accordion">SHIPPING & RETURNS</button>
+              <div class="panel">
+                <div>
+                  <p>Free standard shipping</p>
+                  <p>See Shipping Policy</p>
+                  <h4>Returns</h4>
+                  <p>
+                    1. Items received within 15 days from the purchase date.
+                  </p>
+                  <p>
+                    2. Items received unused, undamaged and in original package.
+                  </p>
+                  <p>
+                    3. Return shipping fee is paid by buyer. See Return Policy
+                  </p>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <span class="shop-button">Shop 20% Off</span>
+          </div>
+        </div>
+        <div class="featured-img">
+          <img src="./image/featured-img.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- end featured-product -->
+
+    <!-- Product Card -->
+    <div class="product-card">
+      <h2 class="product-heading">What's New</h2>
+      <div class="buttons">
+        <button class="button-value" onclick="filterProduct('Clothing')">
+          Clothing
+        </button>
+        <button class="button-value" onclick="filterProduct('Shoes')">
+          Shoes
+        </button>
+        <button class="button-value" onclick="filterProduct('Bag')">Bag</button>
+        <button class="button-value" onclick="filterProduct('kids')">
+          kids
+        </button>
+        <button class="button-value" onclick="filterProduct('Beauty')">
+          Beauty
+        </button>
+        <button class="button-value" onclick="filterProduct('Swiming')">
+          swiming
+        </button>
+        <button class="button-value" onclick="filterProduct('Jewellery')">
+          Jewellery
+        </button>
+      </div>
+      <div id="products">
+        <div class="swiper mySwiper product-container">
+          <div
+            id="product-content"
+            class="swiper-wrapper product-content"
+          ></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- end Product Card -->
+
+    <!-- javaScript -->
+    <script src="./style.js"></script>
+    <script src="./card.js"></script>
+    <script></script>
+  </body>
+</html>
